@@ -1,0 +1,16 @@
+{
+    "name": "PPM Note Saver",
+    "version": "1.0",
+    "description": "Saves un-added notes from certain death!",
+    "permissions": [
+        "*://project.dtc.corp/niku/nu*"
+    ],
+    "content_scripts": [
+        {
+            "css": ["override.css"],
+            "js": [ "contentscript.js" ],
+            "matches": [ "https://project.dtc.corp/niku/nu*" ]
+        }
+    ],
+    "manifest_version": 2
+}
